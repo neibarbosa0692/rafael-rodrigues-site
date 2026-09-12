@@ -30,7 +30,7 @@
 
   <main>
     <section class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-bg" aria-hidden="true"><img src="assets/rafael-hero.jpeg" alt=""></div>
       <div class="hero-overlay"></div>
       <div class="hero-content container reveal">
         <p class="eyebrow">Cantor • Intérprete • Shows & eventos</p>
@@ -53,7 +53,7 @@
         </div>
         <div class="copy reveal-right">
           <p class="section-kicker">Sobre o artista</p>
-          <h2>Presença, autenticidade e um repertório que conversa com o público.</h2>
+          <h2>Presença, autenticidade e repertório que conversa com o público.</h2>
           <p>Rafael Rodrigues é cantor e intérprete com atuação na região nordeste do Pará. Seu trabalho é marcado pela autenticidade, presença de palco e interpretação de grandes sucessos do arrocha, sertanejo e música popular.</p>
           <p>Ao vivo e nas redes sociais, Rafael constrói uma identidade próxima do público, com repertório versátil e uma proposta artística feita para criar conexão, emoção e entretenimento.</p>
           <div class="chips"><span>Arrocha</span><span>Sertanejo</span><span>Música popular</span><span>Eventos</span></div>
@@ -68,11 +68,8 @@
           <a class="text-link" href="https://www.youtube.com/@cantorrafaelrodrigues" target="_blank" rel="noopener">Ver canal no YouTube ↗</a>
         </div>
         <div class="video-card reveal">
-          <div class="video-placeholder">
-            <div class="play-circle">▶</div>
-            <h3>Vídeo em destaque</h3>
-            <p>Em breve vamos definir aqui o melhor vídeo do canal do Rafael para reprodução automática.</p>
-            <a class="btn btn-primary" href="https://www.youtube.com/@cantorrafaelrodrigues" target="_blank" rel="noopener">Abrir YouTube</a>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/smSFZk81Kmo?rel=0&modestbranding=1" title="Rafael Rodrigues - vídeo em destaque" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -104,7 +101,11 @@
 
     <section class="section agenda" id="agenda">
       <div class="container agenda-box reveal">
-        <div><p class="section-kicker">Agenda</p><h2>Próximas apresentações</h2><p>A agenda pública será atualizada aqui conforme novas datas forem confirmadas.</p></div>
+        <div class="agenda-status">
+          <p class="section-kicker">Agenda</p>
+          <span class="agenda-dot"></span>
+          <div><h2>Novas datas em breve</h2><p>Acompanhe as redes sociais ou consulte diretamente a disponibilidade do Rafael.</p></div>
+        </div>
         <a class="btn btn-ghost" href="https://wa.me/5591985057791?text=Olá!%20Gostaria%20de%20consultar%20a%20agenda%20do%20Rafael%20Rodrigues." target="_blank" rel="noopener">Consultar disponibilidade</a>
       </div>
     </section>
@@ -118,7 +119,9 @@
   </main>
 
   <footer><div class="container footer-inner"><img src="assets/logo-rafael.png" alt="Rafael Rodrigues"><p>© 2026 Rafael Rodrigues. Todos os direitos reservados.</p></div></footer>
-  <a class="whatsapp-float" href="https://wa.me/5591985057791?text=Olá%20Rafael!" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+  <a class="whatsapp-float" href="https://wa.me/5591985057791?text=Olá%20Rafael!" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.03 3C8.84 3 3 8.78 3 15.91c0 2.28.6 4.51 1.73 6.47L3 29l6.8-1.76a13.07 13.07 0 0 0 6.22 1.58h.01C23.22 28.82 29 23.03 29 15.9 29 8.78 23.22 3 16.03 3Zm7.61 18.43c-.32.9-1.87 1.72-2.58 1.82-.66.1-1.5.14-2.42-.15-.56-.18-1.28-.42-2.2-.81-3.87-1.65-6.39-5.5-6.58-5.76-.18-.26-1.57-2.08-1.57-3.97s.99-2.82 1.34-3.2c.35-.39.77-.48 1.03-.48h.74c.24.01.56-.09.87.66.32.77 1.08 2.65 1.17 2.84.1.19.16.42.03.68-.13.26-.19.42-.38.64-.19.22-.4.49-.58.65-.19.19-.39.4-.17.78.23.39 1 1.64 2.15 2.66 1.48 1.31 2.72 1.72 3.11 1.91.39.19.61.16.84-.1.23-.26.97-1.13 1.23-1.52.26-.39.52-.32.87-.19.35.13 2.23 1.05 2.61 1.24.39.19.65.29.74.45.1.16.1.94-.22 1.84Z"/></svg>
+  </a>
   <script src="script.js"></script>
 </body>
 </html>
