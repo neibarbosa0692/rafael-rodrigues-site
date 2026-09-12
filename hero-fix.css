@@ -1,0 +1,17 @@
+/* Ajuste visual V2.1 - transição suave entre o fundo escuro e a foto do Rafael */
+@media (min-width: 901px){
+  .hero-bg img{
+    width:min(68vw,1120px);
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.10) 9%,rgba(0,0,0,.55) 22%,#000 39%);
+    mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.10) 9%,rgba(0,0,0,.55) 22%,#000 39%);
+  }
+  .hero-overlay{
+    background:
+      linear-gradient(90deg,rgba(6,5,4,.99) 0%,rgba(6,5,4,.94) 31%,rgba(6,5,4,.72) 46%,rgba(6,5,4,.34) 61%,rgba(6,5,4,.08) 78%,rgba(6,5,4,.02) 100%),
+      linear-gradient(0deg,rgba(9,8,7,.74),transparent 34%);
+  }
+}
+
+@media (max-width: 900px){
+  .hero-bg img{-webkit-mask-image:none;mask-image:none;}
+}
