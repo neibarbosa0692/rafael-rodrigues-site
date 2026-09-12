@@ -1,3 +1,8 @@
+const responsiveCss=document.createElement('link');
+responsiveCss.rel='stylesheet';
+responsiveCss.href='v2-mobile.css';
+document.head.appendChild(responsiveCss);
+
 const header=document.querySelector('.topbar');
 const menuBtn=document.querySelector('.menu-btn');
 const nav=document.querySelector('.nav');
